@@ -1,0 +1,57 @@
+{
+	"title": "Resultados de test PCR realizados por isla a partir de 01/01/2021, porcentajes",
+	"description": "Resultados de test PCR realizados por isla a partir de 01/01/2021 con cálculo de porcentajes",
+	"author": "Servicio Canario de la Salud",
+	"fields": [
+		{
+			"name": "fecha_datos",
+			"description": "Fecha en que se han extraido los datos de la base de datos de Sanidad",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		}, 
+		{
+			"name": "isla",
+			"description": "Isla"
+		},
+		{
+			"name": "fecha",
+			"description": "Fecha de los datos",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		}, 
+		{
+			"name": "pcr_total",
+			"description": "Número total de test pcr realizados en esa isla ese día",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#integer"
+			}
+		},
+		{
+			"name": "pcr_positivos",
+			"description": "Número total de test pcr realizados en esa isla ese día que dieron positivo",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#integer"
+			}
+		},
+		{
+			"name": "pcr_porcentaje_positivos",
+			"description": "Porcentaje de test pcr realizados en esa isla ese día que dieron positivo",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#decimal",
+				"decimalChar": ","
+			}
+		},
+		{
+			"name": "pcr_porcentaje_positivos_7dias",
+			"description": "Porcentaje de test pcr realizados en esa isla ese día que dieron positivo acumulado en los 7 días anteriores a la fecha actual",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#decimal",
+				"decimalChar": ","
+			}
+		}
+	]
+}

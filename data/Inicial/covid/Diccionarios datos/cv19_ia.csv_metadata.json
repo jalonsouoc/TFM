@@ -1,0 +1,50 @@
+{
+	"title": "Incidencia acumulada (casos por 100.000 habitantes) por isla a partir de 01/01/2021",
+	"description": "Incidencia acumulada (casos por 100.000 habitantes) por isla a partir de 01/01/2021",
+	"author": "Servicio Canario de la Salud",
+	"fields": [
+		{
+			"name": "fecha_datos",
+			"description": "Fecha en que se han extraido los datos de la base de datos de Sanidad",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+			"name": "isla",
+			"description": "Isla"
+		},
+		{
+			"name": "fecha",
+			"description": "Fecha de los datos",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+			"name": "numero_casos",
+			"description": "Número total de casos covid declarados en la isla ese día",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#integer"
+			}
+		},
+		{
+			"name": "ia_7dias",
+			"description": "Incidencia acumulada de casos covid calculada sobre los 7 días anteriores al día actual",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#decimal",
+				"decimalChar": ","
+			}
+		},
+		{
+			"name": "ia_14dias",
+			"description": "Incidencia acumulada de casos covid calculada sobre los 14 días anteriores al día actual",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#decimal",
+				"decimalChar": ","
+			}
+		}
+	]
+}
