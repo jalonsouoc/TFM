@@ -1,0 +1,10 @@
+name: tfm
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - matplotlib
+  - numpy
+  - pandas
+  - requests

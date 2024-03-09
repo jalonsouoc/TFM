@@ -1,0 +1,181 @@
+{
+  "unidad_generadora": "Servicio del Banco Nacional de Datos Climatol\u00f3gicos",
+  "periodicidad": "1 vez al d\u00eda, con un retardo de 4 d\u00edas",
+  "descripcion": "Climatolog\u00edas diarias",
+  "formato": "application/json",
+  "copyright": "\u00a9 AEMET. Autorizado el uso de la informaci\u00f3n y su reproducci\u00f3n citando a AEMET como autora de la misma.",
+  "notaLegal": "https://www.aemet.es/es/nota_legal",
+  "campos": [
+    {
+      "id": "fecha",
+      "descripcion": "fecha del dia (AAAA-MM-DD)",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "indicativo",
+      "descripcion": "indicativo climatol\u00f3gico",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "nombre",
+      "descripcion": "nombre (ubicaci\u00f3n) de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "provincia",
+      "descripcion": "provincia de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "altitud",
+      "descripcion": "altitud de la estaci\u00f3n en m sobre el nivel del mar",
+      "tipo_datos": "float",
+      "unidad": "m",
+      "requerido": true
+    },
+    {
+      "id": "tmed",
+      "descripcion": "Temperatura media diaria",
+      "tipo_datos": "float",
+      "unidad": "\u00b0C",
+      "requerido": false
+    },
+    {
+      "id": "prec",
+      "descripcion": "Precipitaci\u00f3n diaria de 07 a 07",
+      "tipo_datos": "float",
+      "unidad": "mm (Ip = inferior a 0,1 mm) (Acum = Precipitaci\u00f3n acumulada)",
+      "requerido": false
+    },
+    {
+      "id": "tmin",
+      "descripcion": "Temperatura M\u00ednima del d\u00eda",
+      "tipo_datos": "float",
+      "unidad": "\u00b0C",
+      "requerido": false
+    },
+    {
+      "id": "horatmin",
+      "descripcion": "Hora y minuto de la temperatura m\u00ednima",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "tmax",
+      "descripcion": "Temperatura M\u00e1xima del d\u00eda",
+      "tipo_datos": "float",
+      "unidad": "\u00b0C",
+      "requerido": false
+    },
+    {
+      "id": "horatmax",
+      "descripcion": "Hora y minuto de la temperatura m\u00e1xima",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "dir",
+      "descripcion": "Direcci\u00f3n de la racha m\u00e1xima",
+      "tipo_datos": "float",
+      "unidad": "decenas de grado (99 = direcci\u00f3n variable)(88 = sin dato)",
+      "requerido": false
+    },
+    {
+      "id": "velmedia",
+      "descripcion": "Velocidad media del viento",
+      "tipo_datos": "float",
+      "unidad": "m/s",
+      "requerido": false
+    },
+    {
+      "id": "racha",
+      "descripcion": "Racha m\u00e1xima del viento",
+      "tipo_datos": "float",
+      "unidad": "m/s",
+      "requerido": false
+    },
+    {
+      "id": "horaracha",
+      "descripcion": "Hora y minuto de la racha m\u00e1xima",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "sol",
+      "descripcion": "Insolaci\u00f3n",
+      "tipo_datos": "float",
+      "unidad": "horas",
+      "requerido": false
+    },
+    {
+      "id": "presmax",
+      "descripcion": "Presi\u00f3n m\u00e1xima al nivel de referencia de la estaci\u00f3n",
+      "tipo_datos": "float",
+      "unidad": "hPa",
+      "requerido": false
+    },
+    {
+      "id": "horapresmax",
+      "descripcion": "Hora de la presi\u00f3n m\u00e1xima (redondeada a la hora entera m\u00e1s pr\u00f3xima)",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "presmin",
+      "descripcion": "Presi\u00f3n m\u00ednima al nivel de referencia de la estaci\u00f3n",
+      "tipo_datos": "float",
+      "unidad": "hPa",
+      "requerido": false
+    },
+    {
+      "id": "horapresmin",
+      "descripcion": "Hora de la presi\u00f3n m\u00ednima (redondeada a la hora entera m\u00e1s pr\u00f3xima)",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "hrmedia",
+      "descripcion": "Humedad relativa media diaria",
+      "tipo_datos": "float",
+      "unidad": "%",
+      "requerido": false
+    },
+    {
+      "id": "hrmax",
+      "descripcion": "Humedad relativa m\u00e1xima diaria",
+      "tipo_datos": "float",
+      "unidad": "%",
+      "requerido": false
+    },
+    {
+      "id": "horahrmax",
+      "descripcion": "Hora de la humedad relativa m\u00e1xima diaria",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    },
+    {
+      "id": "hrmin",
+      "descripcion": "Humedad relativa m\u00ednima diaria",
+      "tipo_datos": "float",
+      "unidad": "%",
+      "requerido": false
+    },
+    {
+      "id": "horahrmin",
+      "descripcion": "Hora de la humedad relativa m\u00ednima diaria",
+      "tipo_datos": "string",
+      "unidad": "UTC",
+      "requerido": false
+    }
+  ]
+}
