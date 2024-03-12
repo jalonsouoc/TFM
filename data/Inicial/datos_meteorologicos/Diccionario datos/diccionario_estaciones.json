@@ -1,0 +1,52 @@
+{
+  "unidad_generadora": "Servicio del Banco de Datos Nacional de Climatolog\u00eda",
+  "periodicidad": "1 vez al d\u00eda",
+  "descripcion": "Inventario de estaciones para el apartado Valores Climatolog\u00eda",
+  "formato": "application/json",
+  "copyright": "\u00a9 AEMET. Autorizado el uso de la informaci\u00f3n y su reproducci\u00f3n citando a AEMET como autora de la misma.",
+  "notaLegal": "https://www.aemet.es/es/nota_legal",
+  "campos": [
+    {
+      "id": "latitud",
+      "descripcion": "latitud de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "provincia",
+      "descripcion": "provincia donde reside la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "indicativo",
+      "descripcion": "indicativo climatol\u00f3gico de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "altitud",
+      "descripcion": "altitud de la estaci\u00f3n ",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "nombre",
+      "descripcion": "ubicaci\u00f3n de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "indsinop",
+      "descripcion": "Indicativo sin\u00f3ptico",
+      "tipo_datos": "string",
+      "requerido": true
+    },
+    {
+      "id": "longitud",
+      "descripcion": "longitud de la estaci\u00f3n",
+      "tipo_datos": "string",
+      "requerido": true
+    }
+  ]
+}
