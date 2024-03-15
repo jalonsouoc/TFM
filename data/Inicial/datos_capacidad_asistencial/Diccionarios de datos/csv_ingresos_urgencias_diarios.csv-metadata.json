@@ -1,0 +1,44 @@
+{
+	"title": "Ingresos diarios por el servicio de Urgencias de los centros sanitarios en Canarias",
+	"description": "Ingresos diarios por el servicio de Urgencias de los centros sanitarios en Canarias durante la pandemia de COVID19",
+	"author": "Servicio Canario de la Salud",
+	"fields": [
+	    {
+			"name": "fecha_datos",
+			"description": "Fecha en que se han extraído los datos de la base de datos de Sanidad",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+			"name": "codigo",
+			"description": "Código identificativo para cada centro",
+			"constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#long"
+		   }
+		},		
+		{
+			"name": "fecha",
+			"description": "Fecha de los datos",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+		   "name": "serie",
+		   "description": "Significado del campo valor(Urg_cv: casos que han ingresado en urgencias POR covid19; Urg_ingr: ingresos totales hospitalarios)",
+		   "constraints": {
+			   "pattern": "(Urg_cv|Urg_ingr)"
+		   }
+		},
+		{
+		   "name": "valor",
+		   "description": "Número ingresos del tipo definido en el campo serie",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		}
+	]
+}

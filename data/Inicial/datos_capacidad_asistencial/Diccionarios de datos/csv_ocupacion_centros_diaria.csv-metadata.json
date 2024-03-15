@@ -1,0 +1,52 @@
+{
+	"title": "Ocupación diaria de los centros sanitarios en Canarias",
+	"description": "Ocupación diaria de los centros sanitarios en Canarias durante la pandemia de COVID19, según el tipo de unidad (cama) y diagnóstico",
+	"author": "Servicio Canario de la Salud",
+	"fields": [
+	    {
+			"name": "fecha_datos",
+			"description": "Fecha en que se han extraído los datos de la base de datos de Sanidad",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+			"name": "codigo_centro",
+			"description": "Código identificativo para cada centro",
+			"constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#long"
+		   }
+		},		
+		{
+			"name": "fecha",
+			"description": "Fecha de los datos",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+		   "name": "unidad_funcional",
+		   "description": "Tipo de unidad funcional(CCR: unidades críticas con respirador ;CSR: unidades críticas sin respirador ; HPT: resto de camas hospitalarias)",
+		   "constraints": {
+			   "pattern": "(CCR|CSR|HPT)"
+		   }
+		   
+		},
+		{
+		   "name": "cv19",
+		   "description": "Número de pacientes actualmente ingresados POR covid19en el tipo de unidad funcional que indique el campo unidad_funcional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "nocv19",
+		   "description": "Número de pacientes no covid19 actualmente ingresados en el tipo de unidad funcional que indique el campo unidad_funcional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		}
+	]
+}

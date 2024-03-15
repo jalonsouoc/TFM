@@ -1,0 +1,246 @@
+{
+	"title": "Capacidad asistencial de los centros sanitarios en Canarias",
+	"description": "Capacidad asistencial de los centros sanitarios en Canarias durante la pandemia de COVID19. Cada registro se corresponde con un centro de salud.",
+	"author": "Servicio Canario de la Salud",
+	"fields": [
+	    {
+			"name": "fecha_datos",
+			"description": "Fecha en que se han extraído los datos de la base de datos de Sanidad",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+			"name": "nombre_centro",
+			"description": "Nombre del centro sanitario"
+		},
+		{
+			"name": "siglas_centro",
+			"description": "Siglas identificativas para cada centro"
+		},
+		{
+			"name": "codigo_centro",
+			"description": "Código identificativo para cada centro",
+			"constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#long"
+		   }
+		},
+		{
+			"name": "municipio",
+			"description": "Municipio donde está el centro sanitario"
+		},
+		{
+			"name": "isla",
+			"description": "Isla a la que pertenece el municipio"
+		},
+		{
+			"name": "tipo_centro",
+			"description": "Tipo de de centro (público o privado)"
+		},
+		{
+			"name": "fecha",
+			"description": "Fecha de los datos",
+			"constraints": {
+				"type": "http://www.w3.org/2001/XMLSchema#dateTime",
+				"datePattern": "%d/%m/%Y"
+			}
+		},
+		{
+		   "name": "gbl_tot",
+		   "description": "Número total de camas funcionantes",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "gbl_cv19",
+		   "description": "Número de camas funcionantes ocupadas con pacientes POR COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "gbl_nocv19",
+		   "description": "Número de camas funcionantes ocupadas por pacientes que no tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},		
+		{
+		   "name": "gbl_ocup",
+		   "description": "Número de camas ocupadas",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "hpt_tot",
+		   "description": "Número total de camas funcionantes en hospitalización convencional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "hpt_cv19",
+		   "description": "Número de camas funcionantes ocupadas por pacientes POR COVID-19 en hospitalización convencional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "hpt_nocv19",
+		   "description": "Número de camas funcionantes ocupadas por pacientes que no tienen COVID-19 en hospitalización convencional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "hpt_ocup",
+		   "description": "Número de camas ocupadas en hospitalización convencional",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "ccr_tot",
+		   "description": "Número total de unidades de críticos con respirador",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "ccr_cv19",
+		   "description": "Número de unidades de críticos con respirador ocupadas por pacientes que tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "ccr_nocv19",
+		   "description": "Número de unidades de críticos con respirador ocupadas por pacientes que no tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		
+		{
+		   "name": "ccr_ocup",
+		   "description": "Número de unidades de críticos con respirador ocupadas",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "csr_tot",
+		   "description": "Número total de unidades de críticos sin respirador",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "csr_cv19",
+		   "description": "Número de unidades de críticos sin respirador ocupadas por pacientes que tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "csr_nocv19",
+		   "description": "Número de unidades de críticos sin respirador ocupadas por pacientes que no tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},		
+		{
+		   "name": "csr_ocup",
+		   "description": "Número de unidades de críticos sin respirador ocupadas",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		
+		{
+		   "name": "cri_tot",
+		   "description": "Número total de unidades de críticos (con y sin respirador)",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "cri_cv19",
+		   "description": "Número de unidades de críticos ocupadas por pacientes que tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "cri_nocv19",
+		   "description": "Número de unidades de críticos ocupadas por pacientes que no tienen COVID-19",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},
+		{
+		   "name": "cri_disp",
+		   "description": "Número de unidades de críticos no ocupadas",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},	
+		{
+		   "name": "urg_ingr",
+		   "description": "Número de ingresos totales en Urgencias",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},		
+		{
+		   "name": "urg_cv19",
+		   "description": "Número de camas ocupadas con pacientes POR COVID-19 en Urgencias",
+		   "constraints": {
+			  "type": "http://www.w3.org/2001/XMLSchema#integer"
+		   }
+		},		
+		{
+		   "name": "urg_prcv19",
+		   "description": "Proporción entre los ingresos por COVID-19 realizados a través del Servicio de Urgencias y los ingresos totales del hospital.",
+		   "constraints": {
+						"type": "http://www.w3.org/2001/XMLSchema#decimal",
+						"decimalChar": ","
+					}
+		},
+		{
+		   "name": "gbl_procup",
+		   "description": "Porcentaje de ocupación de camas",
+		   "constraints": {
+						"type": "http://www.w3.org/2001/XMLSchema#decimal",
+						"decimalChar": ","
+					}
+		},
+		{
+		   "name": "csr_procup",
+		   "description": "Porcentaje de ocupación de unidades de críticos sin respirador",
+		   "constraints": {
+						"type": "http://www.w3.org/2001/XMLSchema#decimal",
+						"decimalChar": ","
+					}
+		},
+		{
+		   "name": "ccr_procup",
+		   "description": "Porcentaje de ocupación de unidades de críticos con respirador",
+		   "constraints": {
+						"type": "http://www.w3.org/2001/XMLSchema#decimal",
+						"decimalChar": ","
+					}
+		},
+		{
+		   "name": "hpt_procup",
+		   "description": "Porcentaje de ocupación de camas en hospitalización convencional",
+		   "constraints": {
+						"type": "http://www.w3.org/2001/XMLSchema#decimal",
+						"decimalChar": ","
+					}
+		}
+	]
+}
