@@ -4,8 +4,8 @@ channels:
   - conda-forge
 dependencies:
   - python=3.12.2
-  - matplotlib
+  - matplotlib=3.8
   - numpy=1.26
   - pandas=2.2.1
-  - requests=2.88.2
-  - openpyxl=3.1.12
+  - requests=2.31.0
+  - openpyxl=3.1.2
