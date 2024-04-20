@@ -3,13 +3,14 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.12.2
-  - matplotlib=3.8
-  - numpy=1.26
-  - pandas=2.2.1
-  - requests=2.31.0
-  - openpyxl=3.1.2
-  - seaborn=0.11.2
-  - scikit-learn=1.0.2
+  - python
+  - jupyter
+  - matplotlib
+  - numpy
+  - pandas
+  - requests
+  - openpyxl
+  - seaborn
+  - scikit-learn
   - statsmodels
-  - pip install keras
+  - keras
