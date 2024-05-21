@@ -8,7 +8,7 @@ conda env create -f environment_tfm.yml
 
 ###### Actualización del entorno
 
-1. conda env update -f environment_tfm.yml
+conda env update -f environment_tfm.yml
 
 ###### Activación del entorno de trabajo
 
