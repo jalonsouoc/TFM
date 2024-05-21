@@ -5,7 +5,7 @@
 
 * Jorge Alonso Hernández
 * jalonsohedz@uoc.edu
-* Universitat Oberta de Catalunya
+* Universitat Oberta de Catalunya, Máster Universitario de Ciencia de Datos
 
 ### Lenguaje de programación
 
