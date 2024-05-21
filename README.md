@@ -1,22 +1,15 @@
-# Trabajo final de Máster Universitario de Ciencia de Datos
+# Trabajo de Fin de Master
+## Desarrollo de modelos predictivos para la identificación temprana de brotes epidémicos en COVID-19
 
-### Entorno de trabajo
+### Autor
 
-###### Creación del entorno de trabajo
+* Jorge Alonso Hernández
+* jalonsohedz@uoc.edu
+* Universitat Oberta de Catalunya
 
-conda env create -f environment_tfm.yml
+### Lenguaje de programación
 
-###### Actualización del entorno
-
-conda env update -f environment_tfm.yml
-
-###### Activación del entorno de trabajo
-
-conda activate tfm
-
-###### Desactivación del entorno
-
-conda deactivate
+* Python
 
 ### Fuentes de datos
 
